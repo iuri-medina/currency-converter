@@ -33,7 +33,7 @@ function getResult() {
 function displayResult(currency) {
     let fromRate = currency.rates[firstSelect.value];
     let toRate = currency.rates[secondSelect.value];
-    finalValue.innerHTML = ((toRate / fromRate) * conversionInput.value).toFixed(2);
+    finalValue.innerHTML = secondSelect.value + " " + ((toRate / fromRate) * conversionInput.value).toFixed(2);
 }
 
 swapButton.addEventListener('click',() => {
